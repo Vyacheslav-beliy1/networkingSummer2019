@@ -12,6 +12,8 @@
 		17DC80C922E6219600E5A73A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DC80C722E6219600E5A73A /* Main.storyboard */; };
 		17DC80CB22E6219800E5A73A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DC80CA22E6219800E5A73A /* Assets.xcassets */; };
 		17DC80CE22E6219800E5A73A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DC80CC22E6219800E5A73A /* LaunchScreen.storyboard */; };
+		17DC80D622E627E900E5A73A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC80D522E627E900E5A73A /* Post.swift */; };
+		17DC80D822E6328D00E5A73A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC80D722E6328D00E5A73A /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		17DC80CA22E6219800E5A73A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17DC80CD22E6219800E5A73A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17DC80CF22E6219800E5A73A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17DC80D522E627E900E5A73A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		17DC80D722E6328D00E5A73A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		17DC80C222E6219600E5A73A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				17DC80D522E627E900E5A73A /* Post.swift */,
+				17DC80D722E6328D00E5A73A /* NetworkManager.swift */,
 				17DC80C322E6219600E5A73A /* AppDelegate.swift */,
 				17DC80C522E6219600E5A73A /* ViewController.swift */,
 				17DC80C722E6219600E5A73A /* Main.storyboard */,
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DC80D822E6328D00E5A73A /* NetworkManager.swift in Sources */,
+				17DC80D622E627E900E5A73A /* Post.swift in Sources */,
 				17DC80C622E6219600E5A73A /* ViewController.swift in Sources */,
 				17DC80C422E6219600E5A73A /* AppDelegate.swift in Sources */,
 			);
