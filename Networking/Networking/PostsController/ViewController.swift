@@ -40,6 +40,20 @@ class ViewController: UIViewController {
 	
 	@IBAction func createPost(_ sender: Any) {
 
+		let post = Post(userId: 1, title: "myTitle", body: "mybody")
+
+		networkManager.postCreatePost(post) { serverPost in
+			post.id = serverPost.id
+			DispatchQueue.main.async {
+				let alert = UIAlertController(title: "Greate!", message: "Your post has been created!", preferredStyle: .alert)
+
+				self.present(alert, animated: true, completion: nil)
+
+				DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+					alert.dismiss(animated: true, completion: nil)
+				})
+			}
+		}
 	}
 }
 
