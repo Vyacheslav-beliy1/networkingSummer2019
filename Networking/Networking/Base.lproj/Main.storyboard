@@ -18,38 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="iaQ-yr-EKy">
-                                <rect key="frame" x="120.5" y="411.5" width="173" height="83.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to download posts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoy-4K-cGB">
-                                        <rect key="frame" x="0.0" y="0.0" width="173" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qH4-7B-w1S">
-                                        <rect key="frame" x="31" y="53.5" width="111" height="30"/>
-                                        <state key="normal" title="Download Posts"/>
-                                        <connections>
-                                            <action selector="downloadPostsDidTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="EGa-Bb-xL4"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p0g-mF-qgG">
+                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iaQ-yr-EKy" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Djq-E9-2Nn"/>
-                            <constraint firstItem="iaQ-yr-EKy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Yoa-Py-tx2"/>
+                            <constraint firstItem="p0g-mF-qgG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GN3-li-U9l"/>
+                            <constraint firstItem="p0g-mF-qgG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="R3O-YC-uPw"/>
+                            <constraint firstItem="p0g-mF-qgG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="bKm-vL-i2W"/>
+                            <constraint firstItem="p0g-mF-qgG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="iJs-5e-HBJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="titleLabel" destination="zoy-4K-cGB" id="KJn-Pm-ndV"/>
+                        <outlet property="tableView" destination="p0g-mF-qgG" id="NfM-Nt-8rv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
     </scenes>
 </document>
