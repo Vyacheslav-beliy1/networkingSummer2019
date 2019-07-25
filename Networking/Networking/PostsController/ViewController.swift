@@ -36,6 +36,11 @@ class ViewController: UIViewController {
 			}
 		}
 	}
+
+	
+	@IBAction func createPost(_ sender: Any) {
+
+	}
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
